@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Movie Search</title>
+  </head>
+  <body>
+    <header>
+      <h1>Movie Search App</h1>
+      <input type="text" id="search-input" placeholder="Search for movies..." />
+      <div id="loading-spinner" class="hidden"></div>
+    </header>
+    <main>
+      <section id="movie-container" class="movie-grid">
+        <!-- Movie cards will be dynamically added here -->
+      </section>
+      <div id="pagination" class="pagination hidden">
+        <button id="prev-page" class="page-btn" disabled>Previous</button>
+        <span id="page-info">Page 1</span>
+        <button id="next-page" class="page-btn">Next</button>
+      </div>
+    </main>
+    <div id="details-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <div id="details-container"></div>
+      </div>
+    </div>
+    <button id="scroll-to-top" title="Go to top">↑</button>
+  </body>
+</html>
